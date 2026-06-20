@@ -601,7 +601,7 @@ footer {
   .footer-inner { flex-direction: column; align-items: center; text-align: center; }
   .about-badge { right: 0; }
   .floating-card { display: none; }
-  .mobile-menu ul li a { font-size: clamp(28px, 9vw, 40px); }
+  .mobile-menu ul li a { font-size: clamp(22px, 7vw, 30px); }
 }
 
 @media (max-width: 480px) {
@@ -620,7 +620,7 @@ footer {
   .about-badge { padding: 12px 14px; }
   .about-badge-num { font-size: 28px; }
   .project-info { padding: 22px 20px; }
-  .mobile-menu ul li { margin: 18px 0; }
+  .mobile-menu ul li { margin: 14px 0; }
   .contact-item { padding: 14px 16px; }
   .tech-card { padding: 14px 16px; min-width: 78px; gap: 8px; }
   .tech-card img, .tech-card .tech-svg-icon { width: 22px; height: 22px; }
