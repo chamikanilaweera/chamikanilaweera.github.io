@@ -602,6 +602,7 @@ footer {
   .about-badge { right: 16px; bottom: 16px; }
   .floating-card { display: none; }
   .mobile-menu ul li a { font-size: clamp(22px, 7vw, 30px); }
+  .hero-title { line-height: 1.2; }
 }
 
 @media (max-width: 480px) {
@@ -612,7 +613,7 @@ footer {
   .nav-cv svg { width: 13px; height: 13px; }
   .menu-toggle { padding: 6px; }
   .hero-badge { font-size: 12px; padding: 7px 14px; }
-  .hero-title { font-size: clamp(32px, 9vw, 44px); }
+  .hero-title { font-size: clamp(32px, 9vw, 44px); line-height: 1.25; }
   .hero-sub { font-size: 15px; }
   .hero-actions { flex-direction: column; width: 100%; }
   .hero-actions .btn-primary, .hero-actions .btn-ghost { width: 100%; justify-content: center; }
