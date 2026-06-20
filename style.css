@@ -584,11 +584,14 @@ footer {
   .project-card.featured { grid-column: unset; display: block; }
 }
 @media (max-width: 768px) {
-  #navbar { padding: 16px 24px; }
-  #navbar.scrolled { padding: 12px 24px; }
+  #navbar { padding: 0; }
+  #navbar.scrolled { padding: 0; }
+  .nav-inner { padding: 14px 20px; }
+  #navbar.scrolled .nav-inner { padding: 10px 20px; }
   .nav-links, .nav-cta { display: none; }
-  .nav-cv { display: inline-flex; }
-  .menu-toggle { display: flex; }
+  .nav-cv { display: inline-flex; padding: 9px 14px; font-size: 13px; gap: 6px; flex-shrink: 0; }
+  .menu-toggle { display: flex; flex-shrink: 0; }
+  .nav-logo { font-size: 20px; flex-shrink: 0; }
   .section { padding: 80px 24px; }
   .tech-stack { width: calc(100% + 48px); margin-left: -24px; }
   #hero { padding: 100px 24px 60px; }
@@ -597,4 +600,25 @@ footer {
   .footer-inner { flex-direction: column; align-items: center; text-align: center; }
   .about-badge { right: 0; }
   .floating-card { display: none; }
+  .mobile-menu ul li a { font-size: clamp(28px, 9vw, 40px); }
+}
+
+@media (max-width: 480px) {
+  .nav-inner { padding: 12px 16px; gap: 8px; }
+  .nav-logo { font-size: 18px; }
+  .nav-cv .cv-text { display: none; }
+  .nav-cv { padding: 10px; border-radius: 50%; width: 38px; height: 38px; justify-content: center; }
+  .nav-cv svg { width: 16px; height: 16px; }
+  .menu-toggle { padding: 6px; }
+  .hero-badge { font-size: 12px; padding: 7px 14px; }
+  .hero-title { font-size: clamp(32px, 9vw, 44px); }
+  .hero-sub { font-size: 15px; }
+  .hero-actions { flex-direction: column; width: 100%; }
+  .hero-actions .btn-primary, .hero-actions .btn-ghost { width: 100%; justify-content: center; }
+  .hero-stats { gap: 20px; }
+  .about-badge { padding: 12px 14px; }
+  .about-badge-num { font-size: 28px; }
+  .project-info { padding: 22px 20px; }
+  .mobile-menu ul li { margin: 18px 0; }
+  .contact-item { padding: 14px 16px; }
 }
