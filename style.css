@@ -450,8 +450,9 @@ body {
   text-transform: uppercase; color: var(--text2); text-align: center;
 }
 @media (max-width: 768px) {
-  .tech-card { padding: 20px 26px; min-width: 110px; }
-  .tech-card img, .tech-card .tech-svg-icon { width: 32px; height: 32px; }
+  .tech-card { padding: 16px 20px; min-width: 90px; gap: 10px; }
+  .tech-card img, .tech-card .tech-svg-icon { width: 26px; height: 26px; }
+  .tech-card span { font-size: 9px; }
 }
 
 /* ── PROJECTS ── */
@@ -606,9 +607,9 @@ footer {
 @media (max-width: 480px) {
   .nav-inner { padding: 12px 16px; gap: 8px; }
   .nav-logo { font-size: 18px; }
-  .nav-cv .cv-text { display: none; }
-  .nav-cv { padding: 10px; border-radius: 50%; width: 38px; height: 38px; justify-content: center; }
-  .nav-cv svg { width: 16px; height: 16px; }
+  .nav-cv .cv-text { display: inline; font-size: 11px; }
+  .nav-cv { padding: 8px 12px; border-radius: 100px; width: auto; height: auto; gap: 5px; }
+  .nav-cv svg { width: 13px; height: 13px; }
   .menu-toggle { padding: 6px; }
   .hero-badge { font-size: 12px; padding: 7px 14px; }
   .hero-title { font-size: clamp(32px, 9vw, 44px); }
@@ -621,4 +622,7 @@ footer {
   .project-info { padding: 22px 20px; }
   .mobile-menu ul li { margin: 18px 0; }
   .contact-item { padding: 14px 16px; }
+  .tech-card { padding: 14px 16px; min-width: 78px; gap: 8px; }
+  .tech-card img, .tech-card .tech-svg-icon { width: 22px; height: 22px; }
+  .tech-card span { font-size: 8px; letter-spacing: 0.08em; }
 }
